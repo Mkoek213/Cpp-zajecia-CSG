@@ -1,0 +1,21 @@
+[
+{
+  "directory": "/Users/mikolaj/Desktop/Cpp-zajecia-CSG/PPG2Lab12",
+  "arguments": ["/usr/bin/clang", "-c", "-Qunused-arguments", "-m64", "-O3", "-std=c++20", "-Isrc", "-DNDEBUG", "-o", "build/.objs/csg2d/macosx/x86_64/src/csg2d/shape.cpp.o", "src/csg2d/shape.cpp"],
+  "file": "src/csg2d/shape.cpp"
+},
+{
+  "directory": "/Users/mikolaj/Desktop/Cpp-zajecia-CSG/PPG2Lab12",
+  "arguments": ["/usr/bin/clang", "-c", "-Qunused-arguments", "-m64", "-O3", "-std=c++20", "-Isrc", "-DNDEBUG", "-o", "build/.objs/csg2d/macosx/x86_64/src/csg2d/vector2d.cpp.o", "src/csg2d/vector2d.cpp"],
+  "file": "src/csg2d/vector2d.cpp"
+},
+{
+  "directory": "/Users/mikolaj/Desktop/Cpp-zajecia-CSG/PPG2Lab12",
+  "arguments": ["/usr/bin/clang", "-c", "-Qunused-arguments", "-m64", "-O3", "-std=c++20", "-Isrc", "-DNDEBUG", "-o", "build/.objs/csg2d/macosx/x86_64/src/csg2d/functions.cpp.o", "src/csg2d/functions.cpp"],
+  "file": "src/csg2d/functions.cpp"
+},
+{
+  "directory": "/Users/mikolaj/Desktop/Cpp-zajecia-CSG/PPG2Lab12",
+  "arguments": ["/usr/bin/clang", "-c", "-Qunused-arguments", "-m64", "-O3", "-std=c++20", "-Isrc", "-DNDEBUG", "-o", "build/.objs/csg2d/macosx/x86_64/src/csg2d/main.cpp.o", "src/csg2d/main.cpp"],
+  "file": "src/csg2d/main.cpp"
+}]

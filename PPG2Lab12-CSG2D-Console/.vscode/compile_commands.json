@@ -1,0 +1,31 @@
+[
+{
+  "directory": "/Users/mikolaj/Desktop/PPG2Lab12-CSG2D-Console",
+  "arguments": ["/Library/Developer/CommandLineTools/usr/bin/clang", "-c", "-Qunused-arguments", "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-DNDEBUG", "-o", "build/.objs/PPG2Lab12-CSG2D-Console/macosx/x86_64/release/shape.cpp.o", "shape.cpp"],
+  "file": "shape.cpp"
+},
+{
+  "directory": "/Users/mikolaj/Desktop/PPG2Lab12-CSG2D-Console",
+  "arguments": ["/Library/Developer/CommandLineTools/usr/bin/clang", "-c", "-Qunused-arguments", "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-DNDEBUG", "-o", "build/.objs/PPG2Lab12-CSG2D-Console/macosx/x86_64/release/vector2d.cpp.o", "vector2d.cpp"],
+  "file": "vector2d.cpp"
+},
+{
+  "directory": "/Users/mikolaj/Desktop/PPG2Lab12-CSG2D-Console",
+  "arguments": ["/Library/Developer/CommandLineTools/usr/bin/clang", "-c", "-Qunused-arguments", "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-DNDEBUG", "-o", "build/.objs/PPG2Lab12-CSG2D-Console/macosx/x86_64/release/functions.cpp.o", "functions.cpp"],
+  "file": "functions.cpp"
+},
+{
+  "directory": "/Users/mikolaj/Desktop/PPG2Lab12-CSG2D-Console",
+  "arguments": ["/Library/Developer/CommandLineTools/usr/bin/clang", "-c", "-Qunused-arguments", "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-DNDEBUG", "-o", "build/.objs/PPG2Lab12-CSG2D-Console/macosx/x86_64/release/circle.cpp.o", "circle.cpp"],
+  "file": "circle.cpp"
+},
+{
+  "directory": "/Users/mikolaj/Desktop/PPG2Lab12-CSG2D-Console",
+  "arguments": ["/Library/Developer/CommandLineTools/usr/bin/clang", "-c", "-Qunused-arguments", "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-DNDEBUG", "-o", "build/.objs/PPG2Lab12-CSG2D-Console/macosx/x86_64/release/rectangle.cpp.o", "rectangle.cpp"],
+  "file": "rectangle.cpp"
+},
+{
+  "directory": "/Users/mikolaj/Desktop/PPG2Lab12-CSG2D-Console",
+  "arguments": ["/Library/Developer/CommandLineTools/usr/bin/clang", "-c", "-Qunused-arguments", "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-DNDEBUG", "-o", "build/.objs/main/macosx/x86_64/release/main.cpp.o", "main.cpp"],
+  "file": "main.cpp"
+}]

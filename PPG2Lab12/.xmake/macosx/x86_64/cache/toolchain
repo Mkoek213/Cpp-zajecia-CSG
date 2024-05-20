@@ -1,0 +1,49 @@
+{
+    xcode_arch_x86_64_plat_macosx = {
+        arch = "x86_64",
+        __global = true,
+        plat = "macosx",
+        bindir = "/Library/Developer/CommandLineTools/usr/bin",
+        xcode_sysroot = "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+    },
+    tool_target_csg2d_macosx_x86_64_ld = {
+        program = "/Library/Developer/CommandLineTools/usr/bin/clang++",
+        toolname = "clangxx",
+        toolchain_info = {
+            cachekey = "xcode_arch_x86_64_plat_macosx",
+            name = "xcode",
+            arch = "x86_64",
+            plat = "macosx"
+        }
+    },
+    tool_platform_macosx_x86_64_ld = {
+        program = "/Library/Developer/CommandLineTools/usr/bin/clang++",
+        toolname = "clangxx",
+        toolchain_info = {
+            cachekey = "xcode_arch_x86_64_plat_macosx",
+            name = "xcode",
+            arch = "x86_64",
+            plat = "macosx"
+        }
+    },
+    tool_target_csg2d_macosx_x86_64_cxx = {
+        program = "/Library/Developer/CommandLineTools/usr/bin/clang",
+        toolname = "clang",
+        toolchain_info = {
+            cachekey = "xcode_arch_x86_64_plat_macosx",
+            name = "xcode",
+            arch = "x86_64",
+            plat = "macosx"
+        }
+    },
+    tool_platform_macosx_x86_64_cc = {
+        program = "/Library/Developer/CommandLineTools/usr/bin/clang",
+        toolname = "clang",
+        toolchain_info = {
+            cachekey = "xcode_arch_x86_64_plat_macosx",
+            name = "xcode",
+            arch = "x86_64",
+            plat = "macosx"
+        }
+    }
+}
