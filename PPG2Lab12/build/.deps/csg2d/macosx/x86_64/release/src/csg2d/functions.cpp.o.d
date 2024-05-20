@@ -1,4 +1,6 @@
 {
+    depfiles_gcc = "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/__cpp_functions.cpp.cpp:   src/csg2d/functions.cpp src/csg2d/functions.h src/csg2d/shape.h   src/csg2d/libincludes.h src/csg2d/circle.h src/csg2d/vector2d.h   src/csg2d/rectangle.h\
+",
     values = {
         "/Library/Developer/CommandLineTools/usr/bin/clang",
         {
@@ -32,8 +34,6 @@
             "-DNDEBUG"
         }
     },
-    depfiles_gcc = "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/__cpp_functions.cpp.cpp:   src/csg2d/functions.cpp src/csg2d/functions.h src/csg2d/shape.h   src/csg2d/libincludes.h src/csg2d/circle.h src/csg2d/vector2d.h   src/csg2d/rectangle.h\
-",
     files = {
         "src/csg2d/functions.cpp"
     }

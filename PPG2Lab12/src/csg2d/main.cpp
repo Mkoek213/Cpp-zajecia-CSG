@@ -7,7 +7,6 @@ int main()
     sf::View view(sf::Vector2f(0.f, 0.f), sf::Vector2f(1920.f, 1080.f));
     window.setFramerateLimit(60);
 
-    // Load font
     sf::Font font;
     if (!font.loadFromFile("/Users/mikolaj/Desktop/Cpp-zajecia-CSG/PPG2Lab12/src/csg2d/Open_Sans/git.ttf"))
     {
@@ -35,7 +34,6 @@ int main()
         window.clear(sf::Color::Black);
         window.setView(view);
 
-        // Draw the C++ logo
         drawCppLogo(window, font);
 
         window.display();

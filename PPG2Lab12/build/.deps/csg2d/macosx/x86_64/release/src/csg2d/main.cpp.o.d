@@ -1,9 +1,4 @@
 {
-    files = {
-        "src/csg2d/main.cpp"
-    },
-    depfiles_gcc = "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/__cpp_main.cpp.cpp:   src/csg2d/main.cpp src/csg2d/libincludes.h src/csg2d/functions.h   src/csg2d/shape.h\
-",
     values = {
         "/Library/Developer/CommandLineTools/usr/bin/clang",
         {
@@ -36,5 +31,10 @@
             "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/include",
             "-DNDEBUG"
         }
-    }
+    },
+    files = {
+        "src/csg2d/main.cpp"
+    },
+    depfiles_gcc = "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/__cpp_main.cpp.cpp:   src/csg2d/main.cpp src/csg2d/libincludes.h src/csg2d/functions.h   src/csg2d/shape.h\
+"
 }

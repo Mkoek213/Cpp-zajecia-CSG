@@ -49,7 +49,6 @@ std::shared_ptr<CSG2D::Shape> createCSG2DScene()
     return rect_shp;
 }
 
-// Function to create a hexagon shape
 sf::ConvexShape createHexagon(float radius, const sf::Vector2f& position, const sf::Color& color) {
     sf::ConvexShape hexagon;
     hexagon.setPointCount(6);
@@ -62,15 +61,14 @@ sf::ConvexShape createHexagon(float radius, const sf::Vector2f& position, const 
     return hexagon;
 }
 
-// Function to draw the C++ logo
 void drawCppLogo(sf::RenderTarget &target, const sf::Font &font)
 {
     float hexRadius = 250.f;
     sf::Vector2f hexPositions[] = {
-        {0.f, 0.f},
-        {75.f, 0.f},
-        {37.5f, -75.f},
-        {37.5f, 65.f},
+        {0.f, -300.f},
+        {75.f, -300.f},
+        {37.5f, -375.f},
+        {37.5f, -235.f},
     };
 
     for (const auto &pos : hexPositions)
@@ -81,10 +79,17 @@ void drawCppLogo(sf::RenderTarget &target, const sf::Font &font)
 
     sf::Text plusPlus("++", font, 150);
     plusPlus.setFillColor(sf::Color::White);
-    plusPlus.setPosition(100.f, -50.f); // Position next to the hexagon
+    plusPlus.setPosition(100.f, -350.f);
     target.draw(plusPlus);
+
     sf::Text C("C", font, 500);
     C.setFillColor(sf::Color::White);
-    C.setPosition(-200.f, -300.f); // Position next to the hexagon
+    C.setPosition(-200.f, -600.f); 
     target.draw(C);
+
+    sf::Text name("M.K", font, 600);
+    name.setFillColor(sf::Color::Red);
+    name.setPosition(-400.f, -100.f); 
+    target.draw(name);
+
 }
