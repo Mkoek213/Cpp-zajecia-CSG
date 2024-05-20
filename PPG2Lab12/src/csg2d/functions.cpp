@@ -1,7 +1,7 @@
 #include "functions.h"
 #include "shape.h"
-// #include "circle.h"
-// #include "rectangle.h"
+#include "circle.h"
+#include "rectangle.h"
 // #include "complexshape.h"
 
 sf::Vector2f rotate(const sf::Vector2f &v, float angle_rad)
@@ -39,6 +39,52 @@ void updateTexture(sf::Texture &t, const CSG2D::Shape &s, const sf::Color &foreg
 
 std::shared_ptr<CSG2D::Shape> createCSG2DScene()
 {
-	std::shared_ptr<CSG2D::Shape> shp;
-	return shp;
+	// std::shared_ptr<CSG2D::Shape> shp;
+	// return shp;
+
+    // auto circle_shp = std::make_shared<CSG2D::Circle>(Vector2D(30.f, 10.f), 10.f);
+    // return circle_shp;
+
+    auto rect_shp = std::make_shared<CSG2D::Rectangle>(800.f, 460.f, sf::Vector2f(-32.f, -12.f), std::numbers::pi / 4.f);
+    return rect_shp;
+}
+
+// Function to create a hexagon shape
+sf::ConvexShape createHexagon(float radius, const sf::Vector2f& position, const sf::Color& color) {
+    sf::ConvexShape hexagon;
+    hexagon.setPointCount(6);
+    for (int i = 0; i < 6; ++i) {
+        float angle = i * 60 * 3.14159265f / 180.f;
+        hexagon.setPoint(i, sf::Vector2f(radius * std::cos(angle), radius * std::sin(angle)));
+    }
+    hexagon.setPosition(position);
+    hexagon.setFillColor(color);
+    return hexagon;
+}
+
+// Function to draw the C++ logo
+void drawCppLogo(sf::RenderTarget &target, const sf::Font &font)
+{
+    float hexRadius = 250.f;
+    sf::Vector2f hexPositions[] = {
+        {0.f, 0.f},
+        {75.f, 0.f},
+        {37.5f, -75.f},
+        {37.5f, 65.f},
+    };
+
+    for (const auto &pos : hexPositions)
+    {
+        sf::ConvexShape hexagon = createHexagon(hexRadius, pos, sf::Color::Blue);
+        target.draw(hexagon);
+    }
+
+    sf::Text plusPlus("++", font, 150);
+    plusPlus.setFillColor(sf::Color::White);
+    plusPlus.setPosition(100.f, -50.f); // Position next to the hexagon
+    target.draw(plusPlus);
+    sf::Text C("C", font, 500);
+    C.setFillColor(sf::Color::White);
+    C.setPosition(-200.f, -300.f); // Position next to the hexagon
+    target.draw(C);
 }

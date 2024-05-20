@@ -1,9 +1,9 @@
 {
-    depfiles_gcc = "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/__cpp_main.cpp.cpp:   src/csg2d/main.cpp src/csg2d/libincludes.h src/csg2d/functions.h   src/csg2d/shape.h\
-",
     files = {
         "src/csg2d/main.cpp"
     },
+    depfiles_gcc = "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/__cpp_main.cpp.cpp:   src/csg2d/main.cpp src/csg2d/libincludes.h src/csg2d/functions.h   src/csg2d/shape.h\
+",
     values = {
         "/Library/Developer/CommandLineTools/usr/bin/clang",
         {

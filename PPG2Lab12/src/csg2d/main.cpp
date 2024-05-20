@@ -3,50 +3,43 @@
 
 int main()
 {
-    constexpr std::uint32_t tex_width = 1024u, tex_height = 1024u;
     sf::RenderWindow window(sf::VideoMode(1920, 1080), "CSG2D");
-    sf::View view(sf::Vector2f(0.f, 0.f), sf::Vector2f(1920.f/1080.f*tex_width, tex_height));
-
+    sf::View view(sf::Vector2f(0.f, 0.f), sf::Vector2f(1920.f, 1080.f));
     window.setFramerateLimit(60);
 
-    sf::Texture csg2d_output_texture;
-    csg2d_output_texture.create(tex_width, tex_height);
-    sf::Sprite csg2d_sprite;
-    csg2d_sprite.setTexture(csg2d_output_texture);
-    csg2d_sprite.setOrigin(csg2d_output_texture.getSize().x/2.f, csg2d_output_texture.getSize().y/2.f);
+    // Load font
+    sf::Font font;
+    if (!font.loadFromFile("/Users/mikolaj/Desktop/Cpp-zajecia-CSG/PPG2Lab12/src/csg2d/Open_Sans/git.ttf"))
+    {
+        std::cerr << "Failed to load font!" << std::endl;
+        return -1;
+    }   
 
-    while(window.isOpen())
+    while (window.isOpen())
     {
         sf::Event event;
-        while(window.pollEvent(event))
+        while (window.pollEvent(event))
         {
-            if(event.type == sf::Event::Resized)
+            if (event.type == sf::Event::Resized)
             {
                 std::cout << "Resize: " << event.size.width << ", " << event.size.height << std::endl;
-
-                view.setSize(float(event.size.width)/event.size.height*tex_width, tex_height);
+                view.setSize(float(event.size.width), event.size.height);
             }
 
-            if(event.type == sf::Event::Closed) { window.close(); }
-        }
-
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space))
-        {
-            if(auto shape_shp = createCSG2DScene())
+            if (event.type == sf::Event::Closed)
             {
-                updateTexture(csg2d_output_texture, *shape_shp, sf::Color(0u, 0u, 0u, 255u), sf::Color(255u, 255u, 255u, 255u));
+                window.close();
             }
         }
 
-        window.clear();
+        window.clear(sf::Color::Black);
         window.setView(view);
 
-        window.draw(csg2d_sprite);
+        // Draw the C++ logo
+        drawCppLogo(window, font);
 
-        window.setView(window.getDefaultView());
         window.display();
     }
 
     return 0;
 }
-

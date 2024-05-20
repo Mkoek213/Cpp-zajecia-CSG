@@ -1,49 +1,49 @@
 {
     xcode_arch_x86_64_plat_macosx = {
-        arch = "x86_64",
         __global = true,
         plat = "macosx",
+        xcode_sysroot = "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
         bindir = "/Library/Developer/CommandLineTools/usr/bin",
-        xcode_sysroot = "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+        arch = "x86_64"
+    },
+    tool_platform_macosx_x86_64_cc = {
+        program = "/Library/Developer/CommandLineTools/usr/bin/clang",
+        toolname = "clang",
+        toolchain_info = {
+            arch = "x86_64",
+            plat = "macosx",
+            name = "xcode",
+            cachekey = "xcode_arch_x86_64_plat_macosx"
+        }
     },
     tool_target_csg2d_macosx_x86_64_ld = {
         program = "/Library/Developer/CommandLineTools/usr/bin/clang++",
         toolname = "clangxx",
         toolchain_info = {
-            cachekey = "xcode_arch_x86_64_plat_macosx",
             name = "xcode",
+            plat = "macosx",
             arch = "x86_64",
-            plat = "macosx"
+            cachekey = "xcode_arch_x86_64_plat_macosx"
         }
     },
     tool_platform_macosx_x86_64_ld = {
         program = "/Library/Developer/CommandLineTools/usr/bin/clang++",
         toolname = "clangxx",
         toolchain_info = {
-            cachekey = "xcode_arch_x86_64_plat_macosx",
-            name = "xcode",
             arch = "x86_64",
-            plat = "macosx"
+            plat = "macosx",
+            name = "xcode",
+            cachekey = "xcode_arch_x86_64_plat_macosx"
         }
     },
     tool_target_csg2d_macosx_x86_64_cxx = {
         program = "/Library/Developer/CommandLineTools/usr/bin/clang",
         toolname = "clang",
         toolchain_info = {
-            cachekey = "xcode_arch_x86_64_plat_macosx",
-            name = "xcode",
             arch = "x86_64",
-            plat = "macosx"
-        }
-    },
-    tool_platform_macosx_x86_64_cc = {
-        program = "/Library/Developer/CommandLineTools/usr/bin/clang",
-        toolname = "clang",
-        toolchain_info = {
-            cachekey = "xcode_arch_x86_64_plat_macosx",
+            plat = "macosx",
             name = "xcode",
-            arch = "x86_64",
-            plat = "macosx"
+            cachekey = "xcode_arch_x86_64_plat_macosx"
         }
     }
 }

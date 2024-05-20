@@ -15,3 +15,6 @@ inline std::ostream& operator<<(std::ostream& stream, const sf::Vector2f& v)
 sf::Vector2f rotate(const sf::Vector2f &v, float angle_rad);
 void updateTexture(sf::Texture &t, const CSG2D::Shape &s, const sf::Color &foreground_color, const sf::Color &background_color);
 std::shared_ptr<CSG2D::Shape> createCSG2DScene();
+
+sf::ConvexShape createHexagon(float radius, const sf::Vector2f& position, const sf::Color& color);
+void drawCppLogo(sf::RenderTarget& target, const sf::Font& font);

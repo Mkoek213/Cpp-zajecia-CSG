@@ -1,5 +1,5 @@
 {
-    depfiles_gcc = "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/__cpp_vector2d.cpp.cpp:   src/csg2d/vector2d.cpp src/csg2d/vector2d.h\
+    depfiles_gcc = "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/__cpp_vector2d.cpp.cpp:   src/csg2d/vector2d.cpp\
 ",
     files = {
         "src/csg2d/vector2d.cpp"

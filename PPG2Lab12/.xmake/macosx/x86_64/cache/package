@@ -1,5 +1,96 @@
 {
     sfml = {
+        components = {
+            window = {
+                links = "sfml-window"
+            },
+            audio = {
+                links = "sfml-audio"
+            },
+            __base = {
+                linkdirs = {
+                    "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/lib",
+                    "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/lib",
+                    "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/lib",
+                    "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/lib",
+                    "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/lib",
+                    "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/lib"
+                },
+                links = {
+                    "freetype",
+                    "z",
+                    "FLAC",
+                    "vorbisenc",
+                    "vorbisfile",
+                    "vorbis",
+                    "ogg",
+                    "openal"
+                },
+                sysincludedirs = {
+                    "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/include",
+                    "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/include/freetype2",
+                    "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/include",
+                    "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/include",
+                    "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/include",
+                    "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/include"
+                },
+                frameworks = {
+                    "CoreAudio",
+                    "CoreFoundation",
+                    "AudioToolbox"
+                },
+                defines = "AL_LIBTYPE_STATIC"
+            },
+            system = {
+                links = "sfml-system"
+            },
+            graphics = {
+                links = "sfml-graphics"
+            },
+            network = {
+                links = "sfml-network"
+            }
+        },
+        __enabled = true,
+        sysincludedirs = {
+            "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/include",
+            "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/include/freetype2",
+            "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/include",
+            "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/include",
+            "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/include",
+            "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/include"
+        },
+        envs = {
+            LD_LIBRARY_PATH = {
+                "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/lib",
+                "/Users/mikolaj/.xmake/packages/c/cmake/3.29.2/3e5df9e9859c40e58c694a1385a22115/lib",
+                "/Users/mikolaj/.xmake/packages/z/zlib/v1.3.1/3323a56e4f3c40c2895f732924aff059/lib",
+                "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/lib",
+                "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/lib",
+                "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/lib",
+                "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/lib",
+                "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/lib"
+            },
+            DYLD_LIBRARY_PATH = {
+                "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/lib",
+                "/Users/mikolaj/.xmake/packages/c/cmake/3.29.2/3e5df9e9859c40e58c694a1385a22115/lib",
+                "/Users/mikolaj/.xmake/packages/z/zlib/v1.3.1/3323a56e4f3c40c2895f732924aff059/lib",
+                "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/lib",
+                "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/lib",
+                "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/lib",
+                "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/lib",
+                "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/lib"
+            },
+            PATH = {
+                "/Users/mikolaj/.xmake/packages/c/cmake/3.29.2/3e5df9e9859c40e58c694a1385a22115/bin"
+            }
+        },
+        frameworks = {
+            "CoreAudio",
+            "CoreFoundation",
+            "AudioToolbox"
+        },
+        __requirestr = "sfml >=2.6.0",
         links = {
             "sfml-graphics",
             "sfml-window",
@@ -16,73 +107,7 @@
             "openal"
         },
         version = "2.6.0",
-        defines = "AL_LIBTYPE_STATIC",
-        license = "zlib",
-        frameworks = {
-            "CoreAudio",
-            "CoreFoundation",
-            "AudioToolbox"
-        },
-        components = {
-            graphics = {
-                links = "sfml-graphics"
-            },
-            __base = {
-                frameworks = {
-                    "CoreAudio",
-                    "CoreFoundation",
-                    "AudioToolbox"
-                },
-                sysincludedirs = {
-                    "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/include",
-                    "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/include/freetype2",
-                    "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/include",
-                    "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/include",
-                    "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/include",
-                    "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/include"
-                },
-                links = {
-                    "freetype",
-                    "z",
-                    "FLAC",
-                    "vorbisenc",
-                    "vorbisfile",
-                    "vorbis",
-                    "ogg",
-                    "openal"
-                },
-                defines = "AL_LIBTYPE_STATIC",
-                linkdirs = {
-                    "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/lib",
-                    "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/lib",
-                    "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/lib",
-                    "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/lib",
-                    "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/lib",
-                    "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/lib"
-                }
-            },
-            audio = {
-                links = "sfml-audio"
-            },
-            network = {
-                links = "sfml-network"
-            },
-            window = {
-                links = "sfml-window"
-            },
-            system = {
-                links = "sfml-system"
-            }
-        },
-        linkdirs = {
-            "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/lib",
-            "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/lib",
-            "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/lib",
-            "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/lib",
-            "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/lib",
-            "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/lib"
-        },
-        __requirestr = "sfml >=2.6.0",
+        installdir = "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe",
         libfiles = {
             "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/lib/libsfml-graphics.dylib",
             "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/lib/libsfml-window.dylib",
@@ -107,30 +132,8 @@
             "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/lib/libogg.a",
             "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/lib/libopenal.a"
         },
-        __requireconfs = {
-            alias = "sfml",
-            configs = {
-                shared = true
-            },
-            system = false
-        },
-        sysincludedirs = {
-            "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/include",
-            "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/include/freetype2",
-            "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/include",
-            "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/include",
-            "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/include",
-            "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/include"
-        },
-        __components_deps = {
-            audio = "system",
-            graphics = {
-                "window",
-                "system"
-            },
-            window = "system",
-            network = "system"
-        },
+        defines = "AL_LIBTYPE_STATIC",
+        shared = true,
         __components_orderlist = {
             "graphics",
             "window",
@@ -138,33 +141,30 @@
             "network",
             "system"
         },
-        __enabled = true,
-        envs = {
-            PATH = {
-                "/Users/mikolaj/.xmake/packages/c/cmake/3.29.2/3e5df9e9859c40e58c694a1385a22115/bin"
-            },
-            LD_LIBRARY_PATH = {
-                "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/lib",
-                "/Users/mikolaj/.xmake/packages/c/cmake/3.29.2/3e5df9e9859c40e58c694a1385a22115/lib",
-                "/Users/mikolaj/.xmake/packages/z/zlib/v1.3.1/3323a56e4f3c40c2895f732924aff059/lib",
-                "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/lib",
-                "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/lib",
-                "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/lib",
-                "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/lib",
-                "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/lib"
-            },
-            DYLD_LIBRARY_PATH = {
-                "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/lib",
-                "/Users/mikolaj/.xmake/packages/c/cmake/3.29.2/3e5df9e9859c40e58c694a1385a22115/lib",
-                "/Users/mikolaj/.xmake/packages/z/zlib/v1.3.1/3323a56e4f3c40c2895f732924aff059/lib",
-                "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/lib",
-                "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/lib",
-                "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/lib",
-                "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/lib",
-                "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/lib"
+        __requireconfs = {
+            system = false,
+            alias = "sfml",
+            configs = {
+                shared = true
             }
         },
-        installdir = "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe",
-        shared = true
+        linkdirs = {
+            "/Users/mikolaj/.xmake/packages/s/sfml/2.6.0/c90f2a7cd8a04b2ba5a0dfa0204aa2fe/lib",
+            "/Users/mikolaj/.xmake/packages/f/freetype/2.13.1/e42b26eb72b740aa9a68c1474da99c7e/lib",
+            "/Users/mikolaj/.xmake/packages/l/libflac/1.4.3/821915ccd6834ff887b2954544801fde/lib",
+            "/Users/mikolaj/.xmake/packages/l/libvorbis/1.3.7/ecdbbebd71e747b2b00b7c2001302092/lib",
+            "/Users/mikolaj/.xmake/packages/l/libogg/v1.3.4/13dca54e1aec43eb9a90a7c131f0cc3b/lib",
+            "/Users/mikolaj/.xmake/packages/o/openal-soft/1.23.1/bdb128fb6cc848298e8c5fc5c40c5c5c/lib"
+        },
+        license = "zlib",
+        __components_deps = {
+            network = "system",
+            window = "system",
+            graphics = {
+                "window",
+                "system"
+            },
+            audio = "system"
+        }
     }
 }

@@ -2,6 +2,8 @@
     files = {
         "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/shape.cpp.o",
         "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/vector2d.cpp.o",
+        "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/rectangle.cpp.o",
+        "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/circle.cpp.o",
         "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/functions.cpp.o",
         "build/.objs/csg2d/macosx/x86_64/release/src/csg2d/main.cpp.o"
     },
